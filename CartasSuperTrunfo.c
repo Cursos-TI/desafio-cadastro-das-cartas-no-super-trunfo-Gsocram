@@ -120,11 +120,16 @@ resultado_pib = (pib > Pib);
 printf("Pib (carta1 > carta2) o resultado é: %d\n", resultado_pib);
 
 resultado_pontos_turisticos = (numerodepontosturisticos > numerodepontosTuristicos);
-printf("Pontos turistico (carta1 >carta2) o resultado é: %d", resultado_pontos_turisticos);
+printf("Pontos turistico (carta1 >carta2) o resultado é: %d\n", resultado_pontos_turisticos);
 
 resultado_densidade = (densidadePopulacional < densidadepopulacional);
-printf("Densidade Populacional (carta1 > carta2) o resultado é: %d", resultado_densidade);
+printf("Densidade Populacional (carta1 > carta2) o resultado é: %d\n", resultado_densidade);
 
+resultado_pibpercapita = (pibpercapita > Pibpercapita);
+printf("O PIb Per Capita (carta1 > carta2) o resultado é: %d\n",resultado_pibpercapita);
+
+resultado_superpoder = (Superpoder > superpoder );
+printf("O Super Poder (carta1 > carta2) o resultado é: %d\n", resultado_superpoder);
  
 return 0;
 
