@@ -70,6 +70,8 @@ int resultado_area;
 int resultado_pib;
 int resultado_pontos_turisticos;
 int resultado_densidade;
+int resultado_pibpercapita;
+int resultado_superpoder;
 
 printf("Digite o Estado:");
 scanf(" %c", &estado);
