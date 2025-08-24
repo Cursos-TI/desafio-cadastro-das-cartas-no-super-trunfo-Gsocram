@@ -101,6 +101,8 @@ printf("Densidade Populacional: %f hab/km²\n", densidadePopulacional);
 pibpercapita = (float) Pib / populacaO;
 printf("PIB Per  capita: %f Reais\n", pibpercapita);
 
+superpoder = populacaO + Area + Pib + Pibpercapita + (1.0f / densidadePopulacional) + numerodepontosTuristicos;
+printf(" Super Poder: %.2f\n", superpoder);
 
 
 
