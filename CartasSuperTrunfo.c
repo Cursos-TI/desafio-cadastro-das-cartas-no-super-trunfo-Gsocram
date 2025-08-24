@@ -65,7 +65,11 @@ int numerodepontosTuristicos = 50;
 float densidadepopulacional;
 float Pibpercapita;
 float superpoder;
-int resultado;
+int resultado_populacao;
+int resultado_area;
+int rsultado_pib;
+int resultado_pontos_turisticos;
+int resultado_densidade;
 
 printf("Digite o Estado:");
 scanf(" %c", &estado);
@@ -104,7 +108,8 @@ printf("PIB Per  capita: %f Reais\n", pibpercapita);
 superpoder = populacaO + Area + Pib + Pibpercapita + (1.0f / densidadePopulacional) + numerodepontosTuristicos;
 printf(" Super Poder: %.2f\n", superpoder);
 
-
+resultado_populacao = (populacao > populacaO);
+printf("População (salvador > Goiania) o resultado é: %d\n", resultado_populacao);
 
 
  
