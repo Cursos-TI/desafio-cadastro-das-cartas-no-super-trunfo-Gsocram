@@ -29,7 +29,7 @@ scanf("%s", nomedacidade);
 printf("O Nome da Cidade é: %s\n", nomedacidade);
 
 printf("Digite o numero de População:");
-scanf("%u", &populacao);
+scanf("%ld", &populacao);
 printf("A População é: %ld\n", populacao);
 
 printf("Digite o Tamnho da Àrea:");
@@ -81,7 +81,7 @@ printf("Nome da Cidade é: %s\n", nomedacidadE);
 
 printf("Digite o nume de População:");
 scanf("%ld", &populacaO);
-printf("O numero de População é: %d\n", populacaO);
+printf("O numero de População é: %ld\n", populacaO);
 
 printf("Digite o Tamanho da Área:");
 scanf("%f", &Area );
