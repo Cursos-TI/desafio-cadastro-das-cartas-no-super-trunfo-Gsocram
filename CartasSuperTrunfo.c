@@ -7,12 +7,14 @@ printf("Carta1:\n");
 char Estado = 'b';
 char codigo [20] = "b01";
 char nomedacidade [20] = "Salvador";
-int populacao = 2568900;
+unsigned long int populacao = 2568900;
 float area = 150.75f;
 float pib = 639000000.0f;
 int numerodepontosturisticos = 100;
 float densidadePopulacional;
 float pibpercapita;
+float Superpoder;
+int Resultao, cartA1, carta2;
 
 printf("Digite o Estado:"); 
 scanf("%c", &Estado);
@@ -27,8 +29,8 @@ scanf("%s", nomedacidade);
 printf("O Nome da Cidade é: %s\n", nomedacidade);
 
 printf("Digite o numero de População:");
-scanf("%d", &populacao);
-printf("A População é: %d\n", populacao);
+scanf("%u", &populacao);
+printf("A População é: %ld\n", populacao);
 
 printf("Digite o Tamnho da Àrea:");
 scanf("%f", &area);
@@ -48,18 +50,22 @@ printf("Densidade Populacional: %f hab/km²\n", densidadePopulacional);
 pibpercapita = (float) pib / populacao;
 printf("PIB Per Capita: %f Reais\n", pibpercapita);
 
+Superpoder = populacao + area + pib + pibpercapita + (1.0f / densidadePopulacional)+ numerodepontosturisticos;
+printf("Super Poder: %.2f\n", Superpoder);
 
 printf("carta2:\n");
 
 char estado ='g';
 char Codigo[20] ="G02";
 char nomedacidadE [20] = "Goiânia";
-int populacaO = 2563900;
-float Area = 160.70;
+unsigned long int populacaO = 2563900;
+float Area = 160.70f;
 float Pib = 729000000.0f;
 int numerodepontosTuristicos = 50;
 float densidadepopulacional;
 float Pibpercapita;
+float superpoder;
+int resultado;
 
 printf("Digite o Estado:");
 scanf(" %c", &estado);
@@ -74,7 +80,7 @@ scanf("%s", nomedacidadE);
 printf("Nome da Cidade é: %s\n", nomedacidadE);
 
 printf("Digite o nume de População:");
-scanf("%d", &populacaO);
+scanf("%ld", &populacaO);
 printf("O numero de População é: %d\n", populacaO);
 
 printf("Digite o Tamanho da Área:");
