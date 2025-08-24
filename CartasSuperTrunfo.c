@@ -1,22 +1,136 @@
-#include <stdio.h>
+#include <stdio.h> 
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
+int main(){
+printf("Desafio Cartas Super Trunfo\n");
+printf("Carta1:\n");
 
-int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+char Estado = 'b';
+char codigo [20] = "b01";
+char nomedacidade [20] = "Salvador";
+unsigned long int populacao = 2568900;
+float area = 150.75f;
+float pib = 639000000.0f;
+int numerodepontosturisticos = 100;
+float densidadePopulacional;
+float pibpercapita;
+float Superpoder;
 
-    return 0;
+
+printf("Digite o Estado:"); 
+scanf("%c", &Estado);
+printf("O Estado é: %c\n", Estado);
+
+printf("Digite o Codigo:");
+scanf("%s", codigo);
+printf("O Codigo é: %s\n", codigo);
+
+printf("Digite o Nome da Cidade:");
+scanf("%s", nomedacidade);
+printf("O Nome da Cidade é: %s\n", nomedacidade);
+
+printf("Digite o numero de População:");
+scanf("%ld", &populacao);
+printf("A População é: %ld\n", populacao);
+
+printf("Digite o Tamnho da Àrea:");
+scanf("%f", &area);
+printf("A Área é: %.2f km²\n", area);
+
+printf("Digite o PIB:");
+scanf("%f", &pib);
+printf("O PIB é: %.2f Bilhões\n", pib);
+
+printf("Digite o Numero de Pontos Turisticos:");
+scanf("%d", &numerodepontosturisticos);
+printf("O Numero de Pontos Turisticos é: %d\n", numerodepontosturisticos);
+
+densidadePopulacional = (float) populacao / area;
+printf("Densidade Populacional: %f hab/km²\n", densidadePopulacional);
+
+pibpercapita = (float) pib / populacao;
+printf("PIB Per Capita: %f Reais\n", pibpercapita);
+
+Superpoder = populacao + area + pib + pibpercapita + (1.0f / densidadePopulacional)+ numerodepontosturisticos;
+printf("Super Poder: %.2f\n", Superpoder);
+
+printf("carta2:\n");
+
+char estado ='g';
+char Codigo[20] ="G02";
+char nomedacidadE [20] = "Goiânia";
+unsigned long int populacaO = 2563900;
+float Area = 160.70f;
+float Pib = 729000000.0f;
+int numerodepontosTuristicos = 50;
+float densidadepopulacional;
+float Pibpercapita;
+float superpoder;
+int resultado_populacao;
+int resultado_area;
+int resultado_pib;
+int resultado_pontos_turisticos;
+int resultado_densidade;
+int resultado_pibpercapita;
+int resultado_superpoder;
+
+printf("Digite o Estado:");
+scanf(" %c", &estado);
+printf("O Estado é: %c\n",estado);
+
+printf("Digite o Codigo:");
+scanf(" %s", Codigo);
+printf("O Codigo é: %s\n", Codigo);
+
+printf("Digite o nome da Cidade:");
+scanf("%s", nomedacidadE);
+printf("Nome da Cidade é: %s\n", nomedacidadE);
+
+printf("Digite o nume de População:");
+scanf("%ld", &populacaO);
+printf("O numero de População é: %ld\n", populacaO);
+
+printf("Digite o Tamanho da Área:");
+scanf("%f", &Area );
+printf("A Área é: %.2f km²\n", Area);
+
+printf("Digite o PIB:");
+scanf("%f", &Pib);
+printf("O PIB é: %.2f Bilhões \n", Pib);
+
+printf("Digote o Numero de Pontos Turisticos:");
+scanf("%d", &numerodepontosTuristicos);
+printf("O Numero de Pontos Turisticos é: %d\n", numerodepontosTuristicos);
+
+densidadePopulacional = (float) populacaO / Area;
+printf("Densidade Populacional: %f hab/km²\n", densidadePopulacional);
+
+pibpercapita = (float) Pib / populacaO;
+printf("PIB Per  capita: %f Reais\n", pibpercapita);
+
+superpoder = populacaO + Area + Pib + Pibpercapita + (1.0f / densidadePopulacional) + numerodepontosTuristicos;
+printf(" Super Poder: %.2f\n", superpoder);
+
+resultado_populacao = (populacao > populacaO);
+printf("População (carta1 > carta2) o resultado é: %d\n", resultado_populacao);
+
+resultado_area = (area > Area);
+printf("Area (carta1 > carta2) o resultado é: %d\n",resultado_area);
+
+resultado_pib = (pib > Pib);
+printf("Pib (carta1 > carta2) o resultado é: %d\n", resultado_pib);
+
+resultado_pontos_turisticos = (numerodepontosturisticos > numerodepontosTuristicos);
+printf("Pontos turistico (carta1 >carta2) o resultado é: %d\n", resultado_pontos_turisticos);
+
+resultado_densidade = (densidadePopulacional < densidadepopulacional);
+printf("Densidade Populacional (carta1 < carta2) o resultado é: %d\n", resultado_densidade);
+
+resultado_pibpercapita = (pibpercapita > Pibpercapita);
+printf("O PIb Per Capita (carta1 > carta2) o resultado é: %d\n",resultado_pibpercapita);
+
+resultado_superpoder = (Superpoder > superpoder );
+printf("O Super Poder (carta1 > carta2) o resultado é: %d\n", resultado_superpoder);
+ 
+return 0;
+
 }
