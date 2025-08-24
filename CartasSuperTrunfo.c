@@ -14,7 +14,7 @@ int numerodepontosturisticos = 100;
 float densidadePopulacional;
 float pibpercapita;
 float Superpoder;
-int Resultao;
+
 
 printf("Digite o Estado:"); 
 scanf("%c", &Estado);
@@ -120,7 +120,8 @@ printf("Pib (carta1 > carta2) o resultado é: %d\n", resultado_pib);
 resultado_pontos_turisticos = (numerodepontosturisticos > numerodepontosTuristicos);
 printf("Pontos turistico (carta1 >carta2) o resultado é: %d", resultado_pontos_turisticos);
 
-
+resultado_densidade = (densidadePopulacional < densidadepopulacional);
+printf("Densidade Populacional (carta1 > carta2) o resultado é: %d", resultado_densidade);
 
  
 return 0;
