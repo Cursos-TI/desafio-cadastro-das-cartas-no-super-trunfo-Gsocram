@@ -14,7 +14,7 @@ int numerodepontosturisticos = 100;
 float densidadePopulacional;
 float pibpercapita;
 float Superpoder;
-int Resultao, cartA1, carta2;
+int Resultao;
 
 printf("Digite o Estado:"); 
 scanf("%c", &Estado);
