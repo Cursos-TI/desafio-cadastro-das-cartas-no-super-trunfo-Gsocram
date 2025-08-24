@@ -78,8 +78,8 @@ scanf(" %c", &estado);
 printf("O Estado é: %c\n",estado);
 
 printf("Digite o Codigo:");
-scanf("%s", Codigo);
-printf("O Codigo é; %s\n", Codigo);
+scanf(" %s", Codigo);
+printf("O Codigo é: %s\n", Codigo);
 
 printf("Digite o nome da Cidade:");
 scanf("%s", nomedacidadE);
@@ -123,7 +123,7 @@ resultado_pontos_turisticos = (numerodepontosturisticos > numerodepontosTuristic
 printf("Pontos turistico (carta1 >carta2) o resultado é: %d\n", resultado_pontos_turisticos);
 
 resultado_densidade = (densidadePopulacional < densidadepopulacional);
-printf("Densidade Populacional (carta1 > carta2) o resultado é: %d\n", resultado_densidade);
+printf("Densidade Populacional (carta1 < carta2) o resultado é: %d\n", resultado_densidade);
 
 resultado_pibpercapita = (pibpercapita > Pibpercapita);
 printf("O PIb Per Capita (carta1 > carta2) o resultado é: %d\n",resultado_pibpercapita);
