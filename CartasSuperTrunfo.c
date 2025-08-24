@@ -67,7 +67,7 @@ float Pibpercapita;
 float superpoder;
 int resultado_populacao;
 int resultado_area;
-int rsultado_pib;
+int resultado_pib;
 int resultado_pontos_turisticos;
 int resultado_densidade;
 
@@ -109,7 +109,17 @@ superpoder = populacaO + Area + Pib + Pibpercapita + (1.0f / densidadePopulacion
 printf(" Super Poder: %.2f\n", superpoder);
 
 resultado_populacao = (populacao > populacaO);
-printf("População (salvador > Goiania) o resultado é: %d\n", resultado_populacao);
+printf("População (carta1 > carta2) o resultado é: %d\n", resultado_populacao);
+
+resultado_area = (area > Area);
+printf("Area (carta1 > carta2) o resultado é: %d\n",resultado_area);
+
+resultado_pib = (pib > Pib);
+printf("Pib (carta1 > carta2) o resultado é: %d\n", resultado_pib);
+
+resultado_pontos_turisticos = (numerodepontosturisticos > numerodepontosTuristicos);
+printf("Pontos turistico (carta1 >carta2) o resultado é: %d", resultado_pontos_turisticos);
+
 
 
  
